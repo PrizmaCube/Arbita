@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arbitrage Bot</title>
+  <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.18.5/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .best-trade {
+      background-color: #e6ffe6;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 20px;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .progress {
+      width: 0;
+      height: 100%;
+      background-color: #4caf50;
+      border-radius: 10px;
+      transition: width 0.5s ease-in-out;
+    }
+
+    .refresh-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    function App() {
+      const [prices, setPrices] = useState({});
+      const [bestTrades, setBestTrades] = useState([]);
+      const [positions, setPositions] = useState([]);
+      const [priceSearch, setPriceSearch] = useState('');
+      const [tradeSearch, setTradeSearch] = useState('');
+      const [positionSearch, setPositionSearch] = useState('');
+      const [progress, setProgress] = useState(0);
+
+      useEffect(() => {
+        const socket = io();
+
+        socket.on('connect', () => {
+          console.log('Connected to server');
+        });
+
+        socket.on('links', (data) => {
+         console.log('Received links:', data);
+         setLinks(data);
+        });
+
+        socket.on('prices', (data) => {
+          console.log('Received prices:', data);
+          setPrices(data);
+        });
+
+        socket.on('bestTrades', (data) => {
+          console.log('Received best trades:', data);
+          setBestTrades(data);
+        });
+
+        socket.on('positions', (data) => {
+          console.log('Received positions:', data);
+          setPositions(data);
+        });
+
+        socket.on('progress', (data) => {
+          console.log('Received progress:', data);
+          setProgress(data.progress);
+        });
+
+        socket.on('disconnect', () => {
+          console.log('Disconnected from server');
+        });
+
+        return () => {
+          socket.disconnect();
+        };
+      }, []);
+
+      const filteredPrices = Object.entries(prices).filter(([exchange]) =>
+        exchange.toLowerCase().includes(priceSearch.toLowerCase())
+      );
+
+      const filteredTrades = bestTrades.filter(
+        (trade) =>
+          trade.buyExchange.toLowerCase().includes(tradeSearch.toLowerCase()) ||
+          trade.sellExchange.toLowerCase().includes(tradeSearch.toLowerCase())
+      );
+
+      const filteredPositions = positions.filter((position) =>
+        position.symbol.toLowerCase().includes(positionSearch.toLowerCase())
+      );
+
+      const handleRefresh = () => {
+        setProgress(0);
+        // Отправить запрос на сервер для обновления данных
+        // После получения ответа, обновить состояние компонента с новыми данными
+      };
+
+      return (
+        <div>
+          <h1>Arbitrage Bot</h1>
+
+          <div className="progress-bar">
+            <div className="progress" style={{ width: `${progress}%` }}></div>
+          </div>
+
+          <button className="refresh-button" onClick={handleRefresh}>
+            Обновить данные
+          </button>
+
+          <section>
+            <h2>Цены на биржах</h2>
+            <input
+              type="text"
+              placeholder="Поиск по биржам..."
+              value={priceSearch}
+              onChange={(e) => setPriceSearch(e.target.value)}
+            />
+            <table>
+              <thead>
+                <tr>
+                  <th>Биржа</th>
+                  <th>Цена (USDT)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {filteredPrices.map(([exchange, price]) => (
+                  <tr key={exchange}>
+                    <td>{exchange}</td>
+                    <td>{price ? price.toFixed(2) : ''}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </section>
+
+          <section>
+            <h2>Лучшие сделки</h2>
+            <input
+              type="text"
+              placeholder="Поиск по биржам..."
+              value={tradeSearch}
+              onChange={(e) => setTradeSearch(e.target.value)}
+            />
+            <table>
+              <thead>
+                <tr>
+                  <th>Биржа покупки</th>
+                  <th>Цена покупки (USDT)</th>
+                  <th>Биржа продажи</th>
+                  <th>Цена продажи (USDT)</th>
+                  <th>Прибыль (USDT)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {filteredTrades.map((trade, index) => (
+                  <tr key={index} className={trade.profit > 0 ? 'best-trade' : ''}>
+                    <td>{trade.buyExchange}</td>
+                    <td>{trade.buyPrice ? trade.buyPrice.toFixed(2) : ''}</td>
+                    <td>{trade.sellExchange}</td>
+                    <td>{trade.sellPrice ? trade.sellPrice.toFixed(2) : ''}</td>
+                    <td>{trade.profit ? trade.profit.toFixed(2) : ''}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </section>
+
+          <section>
+            <h2>Текущие позиции</h2>
+            <input
+              type="text"
+              placeholder="Поиск по символам..."
+              value={positionSearch}
+              onChange={(e) => setPositionSearch(e.target.value)}
+            />
+            <table>
+              <thead>
+                <tr>
+                  <th>Символ</th>
+                  <th>Сторона</th>
+                  <th>Количество</th>
+                  <th>Цена</th>
+                </tr>
+              </thead>
+              <tbody>
+                {filteredPositions.map((position, index) => (
+                  <tr key={index}>
+                    <td>{position.symbol}</td>
+                    <td>{position.side}</td>
+                    <td>{position.amount}</td>
+                    <td>{position.price}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </section>
+        </div>
+      );
+    }
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>

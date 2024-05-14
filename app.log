@@ -1,0 +1,294 @@
+2024-05-08T14:22:54.499Z [info]: Начало настройки приложения
+2024-05-08T14:22:54.502Z [info]: Создана папка logs для хранения логов
+2024-05-08T14:22:54.534Z [info]: Экземпляр биржи binance создан успешно
+2024-05-08T14:22:54.542Z [info]: Экземпляр биржи bybit создан успешно
+2024-05-08T14:22:54.551Z [info]: Экземпляр биржи okx создан успешно
+2024-05-08T14:22:54.558Z [info]: Экземпляр биржи mexc создан успешно
+2024-05-08T14:22:54.568Z [info]: Экземпляр биржи gate создан успешно
+2024-05-08T14:22:54.577Z [info]: Экземпляр биржи kucoin создан успешно
+2024-05-08T14:22:54.587Z [info]: Экземпляр биржи bitget создан успешно
+2024-05-08T14:22:54.593Z [info]: Экземпляр биржи coinex создан успешно
+2024-05-08T14:22:54.598Z [info]: Экземпляр биржи phemex создан успешно
+2024-05-08T14:22:54.604Z [info]: Экземпляр биржи bitmex создан успешно
+2024-05-08T14:22:54.604Z [info]: Настройка приложения завершена
+2024-05-08T14:22:54.774Z [error]: Ошибка при получении внешнего IP: Request failed with status code 407
+2024-05-08T14:22:55.148Z [error]: Ошибка при получении баланса портфеля с биржи binance: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2024-05-08T14:22:55.231Z [error]: Подключение к бирже binance - No binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1715178175144&recvWindow=10000&signature=35bf550514c774da34e12d15dfce0d3e08ba6324ea4d0d02937bce83b1530d09 407 Proxy Authentication Required <html><head><title>407 Proxy Authentication Required</title></head>
+<body><h2>407 Proxy Authentication Required</h2><h3>Access to requested resource disallowed by administrator or you need valid username/password to use this resource</h3></body></html>
+
+2024-05-08T14:22:55.240Z [info]: Сообщение отправлено в Telegram: Порт: 8000
+IP-адрес: 192.168.0.106
+Время запуска: 08.05.2024, 19:22:54
+
+Внешний IP-адрес: 5.167.246.180
+
+2024-05-08T14:22:55.374Z [error]: Подключение к бирже bybit - No bybit GET https://api.bybit.com/v5/asset/coin/query-info? 407 Proxy Authentication Required <html><head><title>407 Proxy Authentication Required</title></head>
+<body><h2>407 Proxy Authentication Required</h2><h3>Access to requested resource disallowed by administrator or you need valid username/password to use this resource</h3></body></html>
+
+2024-05-08T14:22:55.470Z [error]: Подключение к бирже okx - No okx GET https://www.okx.com/api/v5/public/instruments?instType=SPOT 407 Proxy Authentication Required <html><head><title>407 Proxy Authentication Required</title></head>
+<body><h2>407 Proxy Authentication Required</h2><h3>Access to requested resource disallowed by administrator or you need valid username/password to use this resource</h3></body></html>
+
+2024-05-08T14:22:55.602Z [error]: Подключение к бирже mexc - No mexc GET https://api.mexc.com/api/v3/capital/config/getall?timestamp=1715178175476&recvWindow=5000&signature=718edf1f3675a4505ac609b0efd7a93c0ccdec14d3bcaf23ece53e4843ab195a 407 Proxy Authentication Required <html><head><title>407 Proxy Authentication Required</title></head>
+<body><h2>407 Proxy Authentication Required</h2><h3>Access to requested resource disallowed by administrator or you need valid username/password to use this resource</h3></body></html>
+
+2024-05-08T14:22:55.843Z [error]: Подключение к бирже gate - No gate GET https://api.gateio.ws/api/v4/spot/currencies 407 Proxy Authentication Required <html><head><title>407 Proxy Authentication Required</title></head>
+<body><h2>407 Proxy Authentication Required</h2><h3>Access to requested resource disallowed by administrator or you need valid username/password to use this resource</h3></body></html>
+
+2024-05-08T14:22:55.937Z [error]: Подключение к бирже kucoin - No kucoin GET https://api.kucoin.com/api/v3/currencies 407 Proxy Authentication Required <html><head><title>407 Proxy Authentication Required</title></head>
+<body><h2>407 Proxy Authentication Required</h2><h3>Access to requested resource disallowed by administrator or you need valid username/password to use this resource</h3></body></html>
+
+2024-05-08T14:22:56.017Z [error]: Подключение к бирже bitget - No bitget GET https://api.bitget.com/api/v2/spot/public/coins 407 Proxy Authentication Required <html><head><title>407 Proxy Authentication Required</title></head>
+<body><h2>407 Proxy Authentication Required</h2><h3>Access to requested resource disallowed by administrator or you need valid username/password to use this resource</h3></body></html>
+
+2024-05-08T14:22:56.126Z [error]: Подключение к бирже coinex - No coinex GET https://api.coinex.com/v1/common/asset/config 407 Proxy Authentication Required <html><head><title>407 Proxy Authentication Required</title></head>
+<body><h2>407 Proxy Authentication Required</h2><h3>Access to requested resource disallowed by administrator or you need valid username/password to use this resource</h3></body></html>
+
+2024-05-08T14:22:56.522Z [error]: Подключение к бирже phemex - No phemex GET https://api.phemex.com/public/products 407 Proxy Authentication Required <html><head><title>407 Proxy Authentication Required</title></head>
+<body><h2>407 Proxy Authentication Required</h2><h3>Access to requested resource disallowed by administrator or you need valid username/password to use this resource</h3></body></html>
+
+2024-05-08T14:22:56.677Z [error]: Подключение к бирже bitmex - No bitmex GET https://www.bitmex.com/api/v1/wallet/assets 407 Proxy Authentication Required <html><head><title>407 Proxy Authentication Required</title></head>
+<body><h2>407 Proxy Authentication Required</h2><h3>Access to requested resource disallowed by administrator or you need valid username/password to use this resource</h3></body></html>
+
+2024-05-08T14:22:56.684Z [info]: Загрузка рынков для биржи binance
+2024-05-08T14:22:56.688Z [info]: Загрузка рынков для биржи bybit
+2024-05-08T14:22:56.692Z [info]: Загрузка рынков для биржи okx
+2024-05-08T14:22:56.696Z [info]: Загрузка рынков для биржи mexc
+2024-05-08T14:22:56.699Z [info]: Загрузка рынков для биржи gate
+2024-05-08T14:22:56.703Z [info]: Загрузка рынков для биржи kucoin
+2024-05-08T14:22:56.710Z [info]: Загрузка рынков для биржи bitget
+2024-05-08T14:22:56.713Z [info]: Загрузка рынков для биржи coinex
+2024-05-08T14:22:56.717Z [info]: Загрузка рынков для биржи phemex
+2024-05-08T14:22:56.719Z [info]: Загрузка рынков для биржи bitmex
+2024-05-08T14:22:57.045Z [error]: Ошибка при получении баланса портфеля с биржи bybit: bybit {"retCode":10010,"retMsg":"Unmatched IP, please check your API key's bound IP addresses.","result":{},"retExtInfo":{},"time":1715178176864}
+2024-05-08T14:22:57.203Z [error]: Ошибка при получении данных с биржи mexc: mexc {"code":700006,"msg":"IP [5.167.246.180] not in the ip white list"}
+2024-05-08T14:22:57.215Z [error]: Ошибка при получении данных с биржи binance: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2024-05-08T14:22:57.483Z [error]: Ошибка при получении данных с биржи bybit: bybit {"retCode":10010,"retMsg":"Unmatched IP, please check your API key's bound IP addresses.","result":{},"retExtInfo":{},"time":1715178177306}
+2024-05-08T14:22:59.163Z [error]: Ошибка при получении данных с биржи okx: exchangeInstance is not defined
+2024-05-08T14:22:59.196Z [error]: Ошибка при получении данных с биржи coinex: exchangeInstance is not defined
+2024-05-08T14:22:59.895Z [error]: Ошибка при получении данных с биржи bitget: exchangeInstance is not defined
+2024-05-08T14:22:59.914Z [error]: Ошибка при получении данных с биржи bitmex: exchangeInstance is not defined
+2024-05-08T14:23:00.243Z [error]: Ошибка при получении данных с биржи kucoin: exchangeInstance is not defined
+2024-05-08T14:23:00.401Z [error]: Ошибка при получении данных с биржи phemex: exchangeInstance is not defined
+2024-05-08T14:23:01.033Z [error]: Ошибка при получении баланса портфеля с биржи mexc: mexc {"code":700006,"msg":"IP [5.167.246.180] not in the ip white list"}
+2024-05-08T14:23:06.892Z [error]: Ошибка при получении данных с биржи gate: exchangeInstance is not defined
+2024-05-08T14:23:06.892Z [warn]: Не удалось получить данные ни с одной биржи
+2024-05-08T14:23:06.893Z [info]: Данные успешно сохранены в файл data.json
+2024-05-08T14:23:06.894Z [info]: Поиск лучших сделок начат
+2024-05-08T14:23:06.903Z [info]: Загрузка рынков для биржи binance
+2024-05-08T14:23:06.909Z [info]: Загрузка рынков для биржи bybit
+2024-05-08T14:23:06.916Z [info]: Загрузка рынков для биржи okx
+2024-05-08T14:23:06.923Z [info]: Загрузка рынков для биржи mexc
+2024-05-08T14:23:06.931Z [info]: Загрузка рынков для биржи gate
+2024-05-08T14:23:06.938Z [info]: Загрузка рынков для биржи kucoin
+2024-05-08T14:23:06.946Z [info]: Загрузка рынков для биржи bitget
+2024-05-08T14:23:06.952Z [info]: Загрузка рынков для биржи coinex
+2024-05-08T14:23:06.957Z [info]: Загрузка рынков для биржи phemex
+2024-05-08T14:23:06.961Z [info]: Загрузка рынков для биржи bitmex
+2024-05-08T14:23:07.435Z [error]: Ошибка при получении данных с биржи bybit: bybit {"retCode":10010,"retMsg":"Unmatched IP, please check your API key's bound IP addresses.","result":{},"retExtInfo":{},"time":1715178187262}
+2024-05-08T14:23:07.445Z [error]: Ошибка при получении данных с биржи mexc: mexc {"code":700006,"msg":"IP [5.167.246.180] not in the ip white list"}
+2024-05-08T14:23:07.530Z [error]: Ошибка при получении данных с биржи binance: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2024-05-08T14:23:07.866Z [error]: Ошибка при получении данных с биржи okx: exchangeInstance is not defined
+2024-05-08T14:23:08.081Z [error]: Ошибка при получении данных с биржи bitmex: exchangeInstance is not defined
+2024-05-08T14:23:08.181Z [error]: Ошибка при получении данных с биржи coinex: exchangeInstance is not defined
+2024-05-08T14:23:08.578Z [error]: Ошибка при получении данных с биржи bitget: exchangeInstance is not defined
+2024-05-08T14:23:08.743Z [error]: Ошибка при получении данных с биржи phemex: exchangeInstance is not defined
+2024-05-08T14:23:10.284Z [error]: Ошибка при получении баланса портфеля с биржи gate: gate {"message":"Request IP not in whitelist: 5.167.246.180","label":"FORBIDDEN"}
+
+2024-05-08T14:23:10.391Z [error]: Ошибка при получении данных с биржи kucoin: exchangeInstance is not defined
+2024-05-08T14:23:13.205Z [error]: Ошибка при получении баланса портфеля с биржи kucoin: kucoin Invalid request ip
+2024-05-08T14:23:15.288Z [error]: Ошибка при получении баланса портфеля с биржи bitget: bitget {"code":"40018","msg":"Invalid IP","requestTime":1715178195076,"data":null}
+2024-05-08T14:23:15.805Z [error]: Ошибка при получении данных с биржи gate: exchangeInstance is not defined
+2024-05-08T14:23:15.806Z [warn]: Не удалось получить данные ни с одной биржи
+2024-05-08T14:23:15.806Z [warn]: Не удалось получить цены для поиска лучших сделок
+2024-05-08T14:23:15.814Z [info]: Мониторинг запущен
+2024-05-08T14:23:15.821Z [info]: Папка для биржи binance создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\binance
+2024-05-08T14:23:15.822Z [info]: Папка для биржи bybit создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\bybit
+2024-05-08T14:23:15.822Z [info]: Папка для биржи okx создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\okx
+2024-05-08T14:23:15.823Z [info]: Папка для биржи mexc создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\mexc
+2024-05-08T14:23:15.823Z [info]: Папка для биржи gate создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\gate
+2024-05-08T14:23:15.824Z [info]: Папка для биржи kucoin создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\kucoin
+2024-05-08T14:23:15.825Z [info]: Папка для биржи bitget создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\bitget
+2024-05-08T14:23:15.838Z [info]: Папка для биржи coinex создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\coinex
+2024-05-08T14:23:15.839Z [info]: Папка для биржи phemex создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\phemex
+2024-05-08T14:23:15.840Z [info]: Папка для биржи bitmex создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\bitmex
+2024-05-08T14:23:15.843Z [info]: Файл портфеля для биржи binance создан: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\binance\portfolio.json
+2024-05-08T14:23:15.846Z [info]: Файл портфеля для биржи bybit создан: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\bybit\portfolio.json
+2024-05-08T14:23:15.847Z [info]: Файл портфеля для биржи mexc создан: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\mexc\portfolio.json
+2024-05-08T14:23:15.848Z [info]: Файл портфеля для биржи gate создан: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\gate\portfolio.json
+2024-05-08T14:23:15.850Z [info]: Файл портфеля для биржи kucoin создан: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\kucoin\portfolio.json
+2024-05-08T14:23:15.851Z [info]: Файл портфеля для биржи bitget создан: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\bitget\portfolio.json
+2024-05-08T14:23:15.852Z [info]: Файл портфеля для биржи coinex создан: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\coinex\portfolio.json
+2024-05-08T14:23:15.853Z [info]: Файл портфеля для биржи phemex создан: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\phemex\portfolio.json
+2024-05-08T14:23:15.854Z [info]: Файл портфеля для биржи bitmex создан: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\bitmex\portfolio.json
+2024-05-08T14:23:15.856Z [info]: Файл общего портфеля создан: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\ALL_Portfolio\consolidated_portfolio.json
+2024-05-08T14:23:16.731Z [error]: Ошибка при получении баланса портфеля с биржи coinex: coinex IP Prohibited
+2024-05-08T14:23:16.834Z [error]: Подключение (Мониторинг цен и выполнение сделок) - No Cannot read properties of null (reading 'activePortfolio')
+2024-05-08T14:23:19.475Z [error]: Ошибка при получении баланса портфеля с биржи phemex: phemex {"code": "401","msg": "401 Request IP mismatch."}
+2024-05-08T14:28:00.447Z [info]: Начало настройки приложения
+2024-05-08T14:28:00.485Z [info]: Экземпляр биржи binance создан успешно
+2024-05-08T14:28:00.493Z [info]: Экземпляр биржи bybit создан успешно
+2024-05-08T14:28:00.504Z [info]: Экземпляр биржи okx создан успешно
+2024-05-08T14:28:00.511Z [info]: Экземпляр биржи mexc создан успешно
+2024-05-08T14:28:00.521Z [info]: Экземпляр биржи gate создан успешно
+2024-05-08T14:28:00.528Z [info]: Экземпляр биржи kucoin создан успешно
+2024-05-08T14:28:00.538Z [info]: Экземпляр биржи bitget создан успешно
+2024-05-08T14:28:00.544Z [info]: Экземпляр биржи coinex создан успешно
+2024-05-08T14:28:00.552Z [info]: Экземпляр биржи phemex создан успешно
+2024-05-08T14:28:00.559Z [info]: Экземпляр биржи bitmex создан успешно
+2024-05-08T14:28:00.559Z [info]: Настройка приложения завершена
+2024-05-08T14:28:00.726Z [error]: Ошибка при получении внешнего IP: Request failed with status code 407
+2024-05-08T14:56:13.551Z [info]: Начало настройки приложения
+2024-05-08T14:56:13.622Z [info]: Экземпляр биржи binance создан успешно
+2024-05-08T14:56:13.630Z [info]: Экземпляр биржи bybit создан успешно
+2024-05-08T14:56:13.639Z [info]: Экземпляр биржи okx создан успешно
+2024-05-08T14:56:13.646Z [info]: Экземпляр биржи mexc создан успешно
+2024-05-08T14:56:13.658Z [info]: Экземпляр биржи gate создан успешно
+2024-05-08T14:56:13.665Z [info]: Экземпляр биржи kucoin создан успешно
+2024-05-08T14:56:13.676Z [info]: Экземпляр биржи bitget создан успешно
+2024-05-08T14:56:13.681Z [info]: Экземпляр биржи coinex создан успешно
+2024-05-08T14:56:13.690Z [info]: Экземпляр биржи phemex создан успешно
+2024-05-08T14:56:13.695Z [info]: Экземпляр биржи bitmex создан успешно
+2024-05-08T14:56:13.696Z [info]: Настройка приложения завершена
+2024-05-08T14:56:14.167Z [info]: Внешний IP: 176.124.44.80
+2024-05-08T14:56:14.200Z [error]: Ошибка при получении баланса портфеля с биржи binance: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2024-05-08T14:56:14.300Z [info]: Сообщение отправлено в Telegram: Порт: 8000
+IP-адрес: 192.168.0.106
+Время запуска: 08.05.2024, 19:56:14
+
+Внешний IP-адрес: 5.167.246.180
+
+2024-05-08T14:56:14.970Z [error]: Ошибка при получении баланса портфеля с биржи bybit: bybit {"retCode":10010,"retMsg":"Unmatched IP, please check your API key's bound IP addresses.","result":{},"retExtInfo":{},"time":1715180174766}
+2024-05-08T14:56:17.034Z [info]: Подключение к бирже binance - OK
+2024-05-08T14:56:19.770Z [error]: Ошибка при получении баланса портфеля с биржи mexc: mexc {"code":700006,"msg":"IP [5.167.246.180] not in the ip white list"}
+2024-05-08T14:56:20.327Z [info]: Подключение к бирже bybit - OK
+2024-05-08T14:56:21.552Z [info]: Подключение к бирже okx - OK
+2024-05-08T14:56:25.277Z [info]: Подключение к бирже mexc - OK
+2024-05-08T14:56:29.132Z [error]: Ошибка при получении баланса портфеля с биржи gate: gate {"message":"Request IP not in whitelist: 5.167.246.180","label":"FORBIDDEN"}
+
+2024-05-08T14:56:33.132Z [error]: Ошибка при получении баланса портфеля с биржи kucoin: kucoin Invalid request ip
+2024-05-08T14:56:37.458Z [error]: Ошибка при получении баланса портфеля с биржи bitget: bitget {"code":"40018","msg":"Invalid IP","requestTime":1715180197218,"data":null}
+2024-05-08T14:56:37.627Z [info]: Подключение к бирже gate - OK
+2024-05-08T14:56:40.029Z [error]: Ошибка при получении баланса портфеля с биржи coinex: coinex IP Prohibited
+2024-05-08T14:56:40.406Z [info]: Подключение к бирже kucoin - OK
+2024-05-08T14:56:42.101Z [info]: Подключение к бирже bitget - OK
+2024-05-08T14:56:43.650Z [info]: Подключение к бирже coinex - OK
+2024-05-08T14:56:44.656Z [error]: Ошибка при получении баланса портфеля с биржи phemex: phemex {"code": "401","msg": "401 Request IP mismatch."}
+2024-05-08T14:56:46.115Z [info]: Подключение к бирже phemex - OK
+2024-05-08T14:56:47.385Z [info]: Подключение к бирже bitmex - OK
+2024-05-08T14:56:47.397Z [info]: Загрузка рынков для биржи binance
+2024-05-08T14:56:47.405Z [info]: Загрузка рынков для биржи bybit
+2024-05-08T14:56:47.412Z [info]: Загрузка рынков для биржи okx
+2024-05-08T14:56:47.419Z [info]: Загрузка рынков для биржи mexc
+2024-05-08T14:56:47.426Z [info]: Загрузка рынков для биржи gate
+2024-05-08T14:56:47.435Z [info]: Загрузка рынков для биржи kucoin
+2024-05-08T14:56:47.443Z [info]: Загрузка рынков для биржи bitget
+2024-05-08T14:56:47.448Z [info]: Загрузка рынков для биржи coinex
+2024-05-08T14:56:47.451Z [info]: Загрузка рынков для биржи phemex
+2024-05-08T14:56:47.454Z [info]: Загрузка рынков для биржи bitmex
+2024-05-08T14:56:47.802Z [error]: Ошибка при получении данных с биржи bybit: bybit {"retCode":10010,"retMsg":"Unmatched IP, please check your API key's bound IP addresses.","result":{},"retExtInfo":{},"time":1715180207610}
+2024-05-08T14:56:47.906Z [error]: Ошибка при получении данных с биржи mexc: mexc {"code":700006,"msg":"IP [5.167.246.180] not in the ip white list"}
+2024-05-08T14:56:47.909Z [error]: Ошибка при получении данных с биржи binance: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2024-05-08T14:56:48.395Z [error]: Ошибка при получении данных с биржи okx: exchangeInstance is not defined
+2024-05-08T14:56:48.422Z [error]: Ошибка при получении данных с биржи bitmex: exchangeInstance is not defined
+2024-05-08T14:56:48.474Z [error]: Ошибка при получении данных с биржи coinex: exchangeInstance is not defined
+2024-05-08T14:56:48.916Z [error]: Ошибка при получении данных с биржи bitget: exchangeInstance is not defined
+2024-05-08T14:56:49.085Z [error]: Ошибка при получении данных с биржи kucoin: exchangeInstance is not defined
+2024-05-08T14:56:49.125Z [error]: Ошибка при получении данных с биржи phemex: exchangeInstance is not defined
+2024-05-08T14:56:56.328Z [error]: Ошибка при получении данных с биржи gate: exchangeInstance is not defined
+2024-05-08T14:56:56.329Z [warn]: Не удалось получить данные ни с одной биржи
+2024-05-08T14:56:56.330Z [info]: Данные успешно сохранены в файл data.json
+2024-05-08T14:56:56.330Z [info]: Поиск лучших сделок начат
+2024-05-08T14:56:56.342Z [info]: Загрузка рынков для биржи binance
+2024-05-08T14:56:56.348Z [info]: Загрузка рынков для биржи bybit
+2024-05-08T14:56:56.355Z [info]: Загрузка рынков для биржи okx
+2024-05-08T14:56:56.361Z [info]: Загрузка рынков для биржи mexc
+2024-05-08T14:56:56.367Z [info]: Загрузка рынков для биржи gate
+2024-05-08T14:56:56.377Z [info]: Загрузка рынков для биржи kucoin
+2024-05-08T14:56:56.394Z [info]: Загрузка рынков для биржи bitget
+2024-05-08T14:56:56.401Z [info]: Загрузка рынков для биржи coinex
+2024-05-08T14:56:56.406Z [info]: Загрузка рынков для биржи phemex
+2024-05-08T14:56:56.411Z [info]: Загрузка рынков для биржи bitmex
+2024-05-08T14:56:56.763Z [error]: Ошибка при получении данных с биржи bybit: bybit {"retCode":10010,"retMsg":"Unmatched IP, please check your API key's bound IP addresses.","result":{},"retExtInfo":{},"time":1715180216575}
+2024-05-08T14:56:56.905Z [error]: Ошибка при получении данных с биржи binance: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2024-05-08T14:56:56.941Z [error]: Ошибка при получении данных с биржи mexc: mexc {"code":700006,"msg":"IP [5.167.246.180] not in the ip white list"}
+2024-05-08T14:56:57.312Z [error]: Ошибка при получении данных с биржи okx: exchangeInstance is not defined
+2024-05-08T14:56:57.354Z [error]: Ошибка при получении данных с биржи bitmex: exchangeInstance is not defined
+2024-05-08T14:56:57.461Z [error]: Ошибка при получении данных с биржи coinex: exchangeInstance is not defined
+2024-05-08T14:56:57.933Z [error]: Ошибка при получении данных с биржи bitget: exchangeInstance is not defined
+2024-05-08T14:56:58.044Z [error]: Ошибка при получении данных с биржи phemex: exchangeInstance is not defined
+2024-05-08T14:56:59.897Z [error]: Ошибка при получении данных с биржи kucoin: exchangeInstance is not defined
+2024-05-08T14:57:05.216Z [error]: Ошибка при получении данных с биржи gate: exchangeInstance is not defined
+2024-05-08T14:57:05.217Z [warn]: Не удалось получить данные ни с одной биржи
+2024-05-08T14:57:05.217Z [warn]: Не удалось получить цены для поиска лучших сделок
+2024-05-08T14:57:05.228Z [info]: Мониторинг запущен
+2024-05-08T14:57:05.231Z [info]: Папка для биржи binance создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\binance
+2024-05-08T14:57:05.232Z [info]: Папка для биржи bybit создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\bybit
+2024-05-08T14:57:05.232Z [info]: Папка для биржи okx создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\okx
+2024-05-08T14:57:05.233Z [info]: Папка для биржи mexc создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\mexc
+2024-05-08T14:57:05.234Z [info]: Папка для биржи gate создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\gate
+2024-05-08T14:57:05.235Z [info]: Папка для биржи kucoin создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\kucoin
+2024-05-08T14:57:05.235Z [info]: Папка для биржи bitget создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\bitget
+2024-05-08T14:57:05.236Z [info]: Папка для биржи coinex создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\coinex
+2024-05-08T14:57:05.236Z [info]: Папка для биржи phemex создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\phemex
+2024-05-08T14:57:05.237Z [info]: Папка для биржи bitmex создана: C:\Users\89000\Desktop\Arbita Opus\arbitrage-bot\src\data\bitmex
+2024-05-08T14:57:06.185Z [error]: Подключение (Мониторинг цен и выполнение сделок) - No binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2024-05-08T14:57:26.556Z [info]: Начало настройки приложения
+2024-05-08T14:57:26.621Z [info]: Экземпляр биржи binance создан успешно
+2024-05-08T14:57:26.628Z [info]: Экземпляр биржи bybit создан успешно
+2024-05-08T14:57:26.635Z [info]: Экземпляр биржи okx создан успешно
+2024-05-08T14:57:26.642Z [info]: Экземпляр биржи mexc создан успешно
+2024-05-08T14:57:26.651Z [info]: Экземпляр биржи gate создан успешно
+2024-05-08T14:57:26.659Z [info]: Экземпляр биржи kucoin создан успешно
+2024-05-08T14:57:26.668Z [info]: Экземпляр биржи bitget создан успешно
+2024-05-08T14:57:26.674Z [info]: Экземпляр биржи coinex создан успешно
+2024-05-08T14:57:26.679Z [info]: Экземпляр биржи phemex создан успешно
+2024-05-08T14:57:26.684Z [info]: Экземпляр биржи bitmex создан успешно
+2024-05-08T14:57:26.685Z [info]: Настройка приложения завершена
+2024-05-08T15:02:14.830Z [info]: Начало настройки приложения
+2024-05-08T15:02:14.901Z [info]: Экземпляр биржи binance создан успешно
+2024-05-08T15:02:14.910Z [info]: Экземпляр биржи bybit создан успешно
+2024-05-08T15:02:14.918Z [info]: Экземпляр биржи okx создан успешно
+2024-05-08T15:02:14.925Z [info]: Экземпляр биржи mexc создан успешно
+2024-05-08T15:02:14.935Z [info]: Экземпляр биржи gate создан успешно
+2024-05-08T15:02:14.944Z [info]: Экземпляр биржи kucoin создан успешно
+2024-05-08T15:02:14.954Z [info]: Экземпляр биржи bitget создан успешно
+2024-05-08T15:02:14.961Z [info]: Экземпляр биржи coinex создан успешно
+2024-05-08T15:02:14.967Z [info]: Экземпляр биржи phemex создан успешно
+2024-05-08T15:02:14.973Z [info]: Экземпляр биржи bitmex создан успешно
+2024-05-08T15:02:14.974Z [info]: Настройка приложения завершена
+2024-05-08T15:02:37.864Z [info]: Начало настройки приложения
+2024-05-08T15:02:37.937Z [info]: Экземпляр биржи binance создан успешно
+2024-05-08T15:02:37.945Z [info]: Экземпляр биржи bybit создан успешно
+2024-05-08T15:02:37.954Z [info]: Экземпляр биржи okx создан успешно
+2024-05-08T15:02:37.962Z [info]: Экземпляр биржи mexc создан успешно
+2024-05-08T15:02:37.972Z [info]: Экземпляр биржи gate создан успешно
+2024-05-08T15:02:37.982Z [info]: Экземпляр биржи kucoin создан успешно
+2024-05-08T15:02:37.991Z [info]: Экземпляр биржи bitget создан успешно
+2024-05-08T15:02:37.998Z [info]: Экземпляр биржи coinex создан успешно
+2024-05-08T15:02:38.004Z [info]: Экземпляр биржи phemex создан успешно
+2024-05-08T15:02:38.010Z [info]: Экземпляр биржи bitmex создан успешно
+2024-05-08T15:02:38.011Z [info]: Настройка приложения завершена
+2024-05-08T15:02:48.084Z [info]: Начало настройки приложения
+2024-05-08T15:02:48.146Z [info]: Экземпляр биржи binance создан успешно
+2024-05-08T15:02:48.152Z [info]: Экземпляр биржи bybit создан успешно
+2024-05-08T15:02:48.161Z [info]: Экземпляр биржи okx создан успешно
+2024-05-08T15:02:48.168Z [info]: Экземпляр биржи mexc создан успешно
+2024-05-08T15:02:48.179Z [info]: Экземпляр биржи gate создан успешно
+2024-05-08T15:02:48.186Z [info]: Экземпляр биржи kucoin создан успешно
+2024-05-08T15:02:48.196Z [info]: Экземпляр биржи bitget создан успешно
+2024-05-08T15:02:48.202Z [info]: Экземпляр биржи coinex создан успешно
+2024-05-08T15:02:48.208Z [info]: Экземпляр биржи phemex создан успешно
+2024-05-08T15:02:48.213Z [info]: Экземпляр биржи bitmex создан успешно
+2024-05-08T15:02:48.213Z [info]: Настройка приложения завершена
+2024-05-08T15:03:04.161Z [info]: Начало настройки приложения
+2024-05-08T15:03:04.229Z [info]: Экземпляр биржи binance создан успешно
+2024-05-08T15:03:04.238Z [info]: Экземпляр биржи bybit создан успешно
+2024-05-08T15:03:04.248Z [info]: Экземпляр биржи okx создан успешно
+2024-05-08T15:03:04.256Z [info]: Экземпляр биржи mexc создан успешно
+2024-05-08T15:03:04.267Z [info]: Экземпляр биржи gate создан успешно
+2024-05-08T15:03:04.277Z [info]: Экземпляр биржи kucoin создан успешно
+2024-05-08T15:03:04.290Z [info]: Экземпляр биржи bitget создан успешно
+2024-05-08T15:03:04.297Z [info]: Экземпляр биржи coinex создан успешно
+2024-05-08T15:03:04.304Z [info]: Экземпляр биржи phemex создан успешно
+2024-05-08T15:03:04.310Z [info]: Экземпляр биржи bitmex создан успешно
+2024-05-08T15:03:04.310Z [info]: Настройка приложения завершена
